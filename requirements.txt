@@ -1,2 +1,2 @@
 xgboost
-sklearn
+scitkit-learn
