@@ -62,4 +62,4 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
 
 st.title('Diamond Price Predictor')
-st.header(""" Because you don't want to get ripped off when buying a hunk of carbon.""")
+st.image("""https://img.favpng.com/1/0/21/portable-network-graphics-diamond-jewellery-illustration-vector-graphics-png-favpng-MeLhh7HbbjvurphzwL346nwPu.jpg""")
