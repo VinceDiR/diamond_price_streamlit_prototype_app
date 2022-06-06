@@ -60,4 +60,6 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
     prediction = model.predict([[carat, cut, color, clarity, depth, table, x, y, z]])
     return prediction
 
-    
+
+st.title('Diamond Price Predictor')
+st.header(""" Because you don't want to get ripped off when buying a hunk of carbon.""")
