@@ -1,6 +1,6 @@
 import xgboost as xgb
 import streamlit as st
-
+import pandas as pd
 
 #Loading up the Regression model we created
 model = xgb.XGBRegressor()
@@ -57,7 +57,7 @@ def predict(carat, cut, color, clarity, depth, table, x, y, z):
         clarity = 7
     
 
-    prediction = model.predict([[carat, cut, color, clarity, depth, table, x, y, z]])
+    prediction = model.predict(pd.DataFrame([[carat, cut, color, clarity, depth, table, x, y, z]], columns=['carat', 'cut', 'color', 'clarity', 'depth', 'table', 'x', 'y', 'z']))
     return prediction
 
 
